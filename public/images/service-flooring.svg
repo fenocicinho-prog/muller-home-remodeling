@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <pattern id="ply" width="160" height="160" patternUnits="userSpaceOnUse"><rect width="160" height="160" fill="#cbb89a"/><path d="M0 80H160M80 0V80" stroke="#b09c7c" stroke-width="3"/><circle cx="30" cy="30" r="2" fill="#8a7a60"/><circle cx="120" cy="120" r="2" fill="#8a7a60"/></pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#ply)"/>
+  <!-- installed planks -->
+  <g stroke="#6e4a27" stroke-width="3">
+    <rect x="330" y="0" width="470" height="60" fill="#b27a47"/><rect x="330" y="60" width="470" height="60" fill="#a46c3c"/>
+    <rect x="330" y="120" width="470" height="60" fill="#bb8650"/><rect x="330" y="180" width="470" height="60" fill="#a8703f"/>
+    <rect x="330" y="240" width="470" height="60" fill="#b27a47"/><rect x="330" y="300" width="470" height="60" fill="#c18c55"/>
+    <rect x="330" y="360" width="470" height="60" fill="#a46c3c"/><rect x="330" y="420" width="470" height="60" fill="#b57e4a"/>
+    <rect x="330" y="480" width="470" height="60" fill="#bb8650"/><rect x="330" y="540" width="470" height="60" fill="#a8703f"/>
+  </g>
+  <g stroke="#6e4a27" stroke-width="3">
+    <path d="M520 0V60M650 60V120M440 120V180M600 180V240M710 240V300M480 300V360M580 360V420M420 420V480M690 480V540M540 540V600M740 0V60M400 60V120M730 120V180M500 180V240"/>
+  </g>
+  <g stroke="#fff" stroke-opacity=".12" stroke-width="2"><path d="M340 30H520M530 90H640M450 150H800M340 210H600M340 330H470M600 450H780"/></g>
+  <!-- staggered edge of unfinished plank -->
+  <g stroke="#6e4a27" stroke-width="3"><rect x="250" y="120" width="80" height="60" fill="#b27a47"/><rect x="170" y="360" width="160" height="60" fill="#c18c55"/><rect x="270" y="420" width="60" height="60" fill="#a46c3c"/></g>
+  <!-- spacers -->
+  <g fill="#1e4a73"><rect x="318" y="30" width="12" height="20"/><rect x="318" y="210" width="12" height="20"/><rect x="318" y="300" width="12" height="20"/></g>
+  <!-- tape measure -->
+  <g transform="rotate(-18 120 120)">
+    <rect x="30" y="80" width="250" height="40" rx="6" fill="#f4c430" stroke="#9a7b10" stroke-width="3"/>
+    <g stroke="#222" stroke-width="2"><path d="M50 80V100M70 80V92M90 80V100M110 80V92M130 80V100M150 80V92M170 80V100M190 80V92M210 80V100M230 80V92M250 80V100"/></g>
+    <rect x="270" y="86" width="40" height="28" rx="6" fill="#1e4a73"/>
+  </g>
+  <!-- mallet -->
+  <g transform="rotate(25 130 480)"><rect x="40" y="450" width="110" height="50" rx="8" fill="#1e4a73"/><rect x="150" y="468" width="120" height="14" rx="6" fill="#8a6a3a"/></g>
+  <!-- pencil -->
+  <g transform="rotate(-8 600 560)"><rect x="520" y="552" width="160" height="12" fill="#e2b02f"/><polygon points="520,552 500,558 520,564" fill="#e9c9a0"/></g>
+</svg>

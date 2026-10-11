@@ -1,26 +1,50 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-brand: #14405f;
+  --color-brand-light: #1e5a85;
+  --color-accent: #e2b02f;
+  --color-accent-dark: #b98a14;
+  --color-soft: #e8edf5;
+  --font-sans: var(--font-roboto), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-playfair), Georgia, serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+html { scroll-behavior: smooth; }
+
+/* ------------------------------------------------------------------
+   Design des boutons (pilules arrondies, flèches, puces) - mêmes couleurs
+   ------------------------------------------------------------------ */
+@layer components {
+  .btn {
+    @apply inline-flex cursor-pointer items-center justify-center gap-2 rounded-full font-semibold transition duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent disabled:cursor-not-allowed disabled:opacity-60;
   }
-}
+  .btn-sm { @apply px-4 py-2 text-sm; }
+  .btn-md { @apply px-6 py-3; }
+  .btn-lg { @apply px-8 py-3.5; }
+  .btn-icon { @apply h-10 w-10 shrink-0 p-0; }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* Pilule pleine */
+  .btn-accent { @apply bg-accent text-brand hover:bg-accent-dark; }
+  .btn-brand { @apply bg-brand text-white hover:bg-brand-light; }
+  /* Pilule contour */
+  .btn-outline { @apply border-2 border-brand text-brand hover:bg-brand hover:text-white; }
+  .btn-outline-light { @apply border-2 border-white/70 text-white hover:bg-white hover:text-brand; }
+  /* Pilule douce */
+  .btn-soft { @apply bg-soft text-brand hover:bg-accent; }
+
+  /* Puce "Option" */
+  .chip {
+    @apply inline-flex items-center rounded-full bg-soft px-5 py-2.5 text-sm font-medium text-brand transition duration-200 hover:bg-accent;
+  }
+
+  /* Lien texte souligné */
+  .nav-link {
+    @apply underline decoration-transparent decoration-2 underline-offset-8 transition duration-200 hover:decoration-accent;
+  }
+
+  /* Carte douce */
+  .card {
+    @apply rounded-3xl bg-soft shadow-md;
+  }
 }

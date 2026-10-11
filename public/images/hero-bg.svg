@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9cc3e6"/><stop offset="1" stop-color="#f6e7c8"/></linearGradient>
+    <pattern id="brick" width="60" height="30" patternUnits="userSpaceOnUse"><rect width="60" height="30" fill="#c98f6b"/><path d="M0 0H60M0 15H60M30 0V15M0 15V30M60 15V30" stroke="#a9704f" stroke-width="3" fill="none"/></pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <ellipse cx="300" cy="150" rx="160" ry="45" fill="#fff" opacity=".7"/><ellipse cx="1300" cy="110" rx="190" ry="50" fill="#fff" opacity=".6"/>
+  <rect y="720" width="1600" height="180" fill="#7ea36b"/><rect y="760" width="1600" height="140" fill="#b9a98c"/>
+  <!-- house -->
+  <rect x="380" y="330" width="760" height="400" fill="#efe3cf"/>
+  <polygon points="340,340 760,130 1180,340" fill="#5b6f84"/>
+  <rect x="380" y="560" width="380" height="170" fill="url(#brick)"/>
+  <rect x="430" y="400" width="150" height="130" fill="#cfe5f5" stroke="#fff" stroke-width="10"/>
+  <rect x="680" y="400" width="150" height="130" fill="#cfe5f5" stroke="#fff" stroke-width="10"/>
+  <rect x="900" y="470" width="130" height="260" fill="#1e4a73"/><circle cx="1010" cy="605" r="8" fill="#e2b02f"/>
+  <rect x="1040" y="400" width="70" height="130" fill="#d9c9ac"/>
+  <!-- scaffolding -->
+  <g stroke="#e2b02f" stroke-width="10" fill="none">
+    <path d="M1120 330V740M1330 330V740M1120 430H1330M1120 530H1330M1120 630H1330M1120 330L1330 430M1120 430L1330 530M1120 530L1330 630"/>
+  </g>
+  <rect x="1110" y="420" width="230" height="14" fill="#8a6a3a"/><rect x="1110" y="520" width="230" height="14" fill="#8a6a3a"/>
+  <!-- ladder -->
+  <g stroke="#c75e0e" stroke-width="10"><path d="M200 740L300 340M300 740L400 340"/></g>
+  <g stroke="#c75e0e" stroke-width="8"><path d="M215 680L315 680M230 610L330 610M245 540L345 540M260 470L360 470M275 400L375 400"/></g>
+  <!-- paint roller + wall patch -->
+  <rect x="760" y="560" width="120" height="170" fill="#e2b02f" opacity=".85"/>
+  <rect x="1380" y="640" width="160" height="26" rx="12" fill="#1e4a73"/><rect x="1530" y="640" width="12" height="90" fill="#555"/>
+  <!-- materials -->
+  <rect x="60" y="690" width="170" height="50" fill="#b98a5e"/><rect x="60" y="650" width="170" height="40" fill="#cda071"/>
+  <rect x="1250" y="745" width="200" height="60" fill="#8a8f96"/><circle cx="1480" cy="780" r="30" fill="#e2b02f"/>
+</svg>

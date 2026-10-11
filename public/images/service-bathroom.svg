@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <pattern id="tile" width="60" height="40" patternUnits="userSpaceOnUse"><rect width="60" height="40" fill="#dbe9ef"/><path d="M0 0H60M0 20H60M30 0V20M0 20V40M60 20V40" stroke="#b9d0da" stroke-width="2" fill="none"/></pattern>
+    <pattern id="floor" width="80" height="80" patternUnits="userSpaceOnUse"><rect width="80" height="80" fill="#f3f1ec"/><rect width="40" height="40" fill="#2f4256"/><rect x="40" y="40" width="40" height="40" fill="#2f4256"/></pattern>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".55"/><stop offset="1" stop-color="#bfe0f2" stop-opacity=".25"/></linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#tile)"/>
+  <rect y="480" width="800" height="120" fill="url(#floor)"/>
+  <rect y="470" width="800" height="14" fill="#e8e8e4"/>
+  <!-- shower -->
+  <path d="M110 0V140Q110 170 140 170H160" stroke="#d6d9dc" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <ellipse cx="185" cy="175" rx="38" ry="12" fill="#d6d9dc"/>
+  <g stroke="#bfe0f2" stroke-width="3" opacity=".8"><path d="M160 195V300M185 195V320M210 195V300"/></g>
+  <rect x="30" y="40" width="400" height="430" fill="url(#glass)" stroke="#fff" stroke-width="8"/>
+  <!-- bathtub -->
+  <path d="M40 380H430V430Q430 490 370 490H100Q40 490 40 430Z" fill="#fbfbfb" stroke="#d3d3cf" stroke-width="4"/>
+  <rect x="70" y="500" width="30" height="14" fill="#e2b02f"/><rect x="370" y="500" width="30" height="14" fill="#e2b02f"/>
+  <path d="M300 380V330Q300 310 320 310H340" stroke="#e2b02f" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <!-- towel rail -->
+  <rect x="460" y="190" width="14" height="14" fill="#e2b02f"/><rect x="460" y="195" width="130" height="6" fill="#e2b02f"/>
+  <rect x="475" y="198" width="90" height="150" rx="6" fill="#1e4a73"/>
+  <!-- mirror -->
+  <circle cx="660" cy="170" r="105" fill="#e8f3fb" stroke="#e2b02f" stroke-width="12"/>
+  <path d="M590 130Q640 90 700 110" stroke="#fff" stroke-width="10" fill="none" opacity=".8" stroke-linecap="round"/>
+  <!-- vanity -->
+  <rect x="520" y="395" width="270" height="20" fill="#f4f4f2"/>
+  <rect x="540" y="415" width="230" height="95" fill="#b98a5e"/>
+  <path d="M655 415V510" stroke="#8d6538" stroke-width="4"/>
+  <rect x="620" y="450" width="26" height="8" rx="4" fill="#e2b02f"/><rect x="664" y="450" width="26" height="8" rx="4" fill="#e2b02f"/>
+  <ellipse cx="655" cy="395" rx="62" ry="12" fill="#e8e8e4"/>
+  <path d="M655 395V355Q655 340 672 340H688" stroke="#e2b02f" stroke-width="10" fill="none" stroke-linecap="round"/>
+</svg>

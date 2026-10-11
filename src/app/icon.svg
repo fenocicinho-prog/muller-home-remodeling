@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320" role="img" aria-label="Muller Home Remodeling">
+  <path d="M160 3a157 157 0 0 0 0 314Z" fill="#007A89"/>
+  <path d="M160 3a157 157 0 0 1 0 314Z" fill="#FF9800"/>
+  <g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M160 3v314" stroke-width="2"/>
+    <path d="M49.5 160 160 49l110.5 111" stroke-width="6"/>
+    <path d="M79.5 131v112M241.5 131v112" stroke-width="6"/>
+    <path d="M79.5 243h50V187l31 28 31-28v56h50" stroke-width="3"/>
+  </g>
+</svg>
