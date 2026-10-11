@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
-import { Playfair_Display, DM_Sans } from "next/font/google";
+import { Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { site } from "@/data/site";
 
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" });
-const bodyFont = DM_Sans({ subsets: ["latin"], variable: "--font-body" });
 
 export const metadata: Metadata = {
   title: `${site.name} | Kitchen, Bathroom & Flooring Remodels`,
@@ -15,7 +14,17 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${playfair.variable} ${bodyFont.variable}`}>
+    <html lang="en" className={playfair.variable}>
+      <head>
+        {/* Roboto chargée via Google Fonts (évite le bug next/font + Turbopack) */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        />
+      </head>
       <body className="bg-white font-sans text-slate-800 antialiased">
         <Header />
         <main>{children}</main>

@@ -6,7 +6,7 @@
   --color-accent: #e2b02f;
   --color-accent-dark: #b98a14;
   --color-soft: #e8edf5;
-  --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Roboto", ui-sans-serif, system-ui, sans-serif;
   --font-serif: var(--font-playfair), Georgia, serif;
 }
 
